@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>aamodal sample</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="aamodal.js"></script>
+<script type="text/javascript">
+$(function(){
+    //モーダルが必要なページに入れる
+	// 左がボタンに入れるid、右がモーダル部分に入れるid
+	var modalTarget = {
+		"btn2":"modal2",
+		"btn3":"modal3"
+	};
+});
+</script>
+
+</head>
+<body>
+<div id="btn">
+    <button id="btn1">button1</button><br />
+	<button id="btn2">button2</button><br />
+	<button id="btn3">button3</button>
+</div>
+
+<div id="modal1" class="modalWrap">
+	<div class="modalBody close">
+		<p>Lorem ipsum</p>
+	</div>
+</div>
+<div id="modal2" class="modalWrap">
+	<div class="modalBody close">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+<div id="modal3" class="modalWrap">
+	<div class="close">
+		<img src="cat.jpg" width="200px" height="200px" />
+	</div>
+</div>
+
+<div class="modalBK"></div>
+
+</body>
+</html>
