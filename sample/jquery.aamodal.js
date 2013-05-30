@@ -1,38 +1,11 @@
 $(function(){
 
-    /*
-ボタン部分は
-	<button id="hoge">ぼたん</button>
-モーダル部分は
-	<div id="fuga" class="modalWrap">
-		<div class="modalBody">
-		モーダルの中身
-		</div>
-	</div>
-という風に記述してください。
-
-Javascriptの中で
-    "hoge":"fuga"
-のような形でボタン部分とモーダル部分のidを紐付けを設定します。
-
-上記2つのidとは別に、モーダル部分にclass="modalWrap"は必須です。
-main.cssに
-	div.modalWrap
-	と
-	div.modalWrap > div
-についての記述がありますがここは書き換えないようにお願いします。
-
-別途、その直下のdivのclassの命名/cssの適用は自由です。
-*/
-
-    
-    
-    //モーダルが必要なページに入れる
-	// 左がボタンに入れるid、右がモーダル部分に入れるid
-	var modalTarget = {
-		"btn2":"modal2",
-		"btn3":"modal3"
-	};
+ //    //モーダルが必要なページに入れる
+	// // 左がボタンに入れるid、右がモーダル部分に入れるid
+	// var modalTarget = {
+	// 	"btn2":"modal2",
+	// 	"btn3":"modal3"
+	// };
 
 	//共通部分に入れる(メニューのモーダルとか)
 	// 左がボタンに入れるid、右がモーダル部分に入れるid
