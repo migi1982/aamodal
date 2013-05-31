@@ -29,11 +29,15 @@ $(function(){
 	};
 
 	//特定のボタンが押されたときにモーダルを出す
-	var arr = $.extend(modalTarget,globalModalTarget);
+	if( typeof modalTarget === "undefined"){
+		var arr = globalModalTarget;
+	}else{
+		var arr = $.extend(modalTarget,globalModalTarget);
+	}
 	var key = '';
 	for (key in arr){
    		$('#'+ key).click(function(){
-			var wn = "#" + modalTarget[this.id];
+			var wn = "#" + arr[this.id];
 			modalOn(wn);
 		});
 	}
